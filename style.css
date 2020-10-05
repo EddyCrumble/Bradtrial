@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('"https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet');
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth; 
+  box-sizing: border-box; 
+}
+
+.logo-image {
+width: 100px;
+height: 100px;
+float: left;
+position: absolute;
+margin: 0 auto;
+padding: 8px;
+height: auto;
+}
+
+nav{
+  display: flex;
+  height: 110px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  position: absolute;
+  left: 125px;
+  
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  top: 120px;
+  left: 50px;
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+h2 {
+  font-family: 'Playfair', serif;
+  font-size: 200%;
+  font-weight: 700;
+  color: #2c2c2c;
+  text-align: center;
+  text-decoration: underline;
+}
+p{
+  font-family: 'Raleway', serif;
+  color: #2c2c2c;
+  font-size: 140%;
+  line-height: 180%;
+  text-align: center;
+  font-weight: 300;
+}
+
+img{
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.intro{
+  height:100%;
+  width: 100%;
+  margin:auto;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/Bell\ &\ Ross\ BR03\ Diver.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  display: table;
+  top: 0;
+  background-attachment: fixed;
+}
+
+
+.intro .inner{
+  display:table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+.content{
+  max-width: 600px;
+  margin:auto;
+}
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 300%;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  padding: 2%;
+  text-shadow: 0px 0px 250px #000000;
+}
+
+.content p {
+  color: #ffffff;
+}
+
+.inner {
+max-width: 600px;
+margin: auto;
+font-size: 170%;
+line-height: 1.6;
+padding: 10px;
+}
+
+
+
+.left-col {
+  width:60%;
+  float:left;
+  margin:4% 0 4% 4%;
+}
+
+.sidebar{
+width: 350px;
+float:left;
+margin: 3%;
+
+
+
+}
+
+.gallery{
+  padding:2%;
+justify-content: center;
+text-align: center;
+width: 95%;
+display: flex;
+flex-wrap: wrap;
+justify-content:center;
+}
+
+.gallery img {
+  flex: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  height: 250px;
+   padding: 15px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.gallery :hover {
+    
+  -webkit-transform: scale(1.1);
+transform: scale(1.1); 
+}
+
+.clearfix {
+  clear:both;
+  height: 3%;
+}
+
+.testimonials{
+justify-content: center;
+background:transparent;
+padding: 40px;
+text-align: center;
+cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    flex: auto;
+    }
+    .wrapper{
+      width:100%;
+    }
+    .carousel{
+      width:100%;
+      padding: 0;    
+    }
+    .carousel .card{
+      color: transparent;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+      justify-content: center;
+      font-family: 'Raleway', serif;
+  color: #2c2c2c;
+  font-size: 140%;
+  line-height: 180%;
+  text-align: justify;
+  font-weight: 300;
+    }
+    .carousel .card-1{
+     
+      width: 40%;
+      height: 50%; 
+      margin: auto;   
+    }
+    .carousel .card-2{
+      width: 20%;
+      height: 20%;
+      justify-content: center;
+      text-align: center;
+      margin: auto;   
+    }  
+    .owl-dots{
+      text-align: center;
+      margin-top: 40px;
+    }
+    .owl-dot{
+      height: 15px;
+      width: 45px;
+      margin: 0 5px;
+      outline: none;
+      border-radius: 14px;
+      border: 2px solid darkgray!important;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .owl-dot.active,
+    .owl-dot:hover{
+      background: darkgray!important;
+    }
+
+.testimonials h3{
+  font-family: 'Playfair', serif;;
+  font-weight: 700;
+  color: #2c2c2c;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.testimonials p{
+  font-family: 'Playfair', serif;
+  font-size: 80%;
+  font-weight: 400;
+  color: #2c2c2c;
+  text-align: center;
+  text-decoration: none;
+}
+
+.parallax1 {
+  background: url(img/Rolex\ Milgauss.jpg) repeat fixed 100%;
+  background-size: 100%;
+}
+
+.parallax2 {
+  background: url(img/Vertex\ MP45.jpg) repeat fixed 100%;
+  background-size: 100%;
+}
+
+.parallax-inner{
+  padding-top:17%
+}
+
+form{
+margin-top: 50px;
+display: inline-block;
+text-align: center;
+justify-content: center;
+position: relative;
+
+width: 100%;
+  }
+  
+  .form-control{
+    width:600px;
+    background:transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color-adjust: #ffffff;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  input{
+  height: 45px;  
+  }
+  
+  form.submit{
+    background: orange;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top:20px;
+  }
+  
+  form.submit:hover{
+    background-color:white;
+    color: black;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .footer{
+    position: relative;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-size: 10px;
+    background: #000000;
+    color: #ffffff;
+    font-weight: bold;  
+  }
+
+
+ 
+  
+  @media (max-width: 1200px) {
+    nav .menu-btn i{
+      display: block;
+      
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 150px;
+      right:100%;
+      background:transparent;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+  
+  
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 20%;
+      margin: 30px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: 60%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      background: #111;
+    }
+    #click:checked ~ ul li a{
+      margin-left: 20px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: #ffffff;
+      color: #1b1b1b;
+    }
+.sidebar {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+.left-col{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gallery img {
+  padding: 10px;
+  height: 200px;
+}
+}
+  
+
+
+  @media screen and (max-width:768px) {
+    .inner{
+      font-size:120%;
+    }
+    .conten h1{
+      font-size:180%;
+    }
+p{font-size:120%;
+}
+h2{font-size:160%
+}
+.left-col{
+  width:60%;
+  margin: 0 0 3% 0;
+  padding:0 2%;
+}
+.sidebar {
+  width: 200px;
+float:left;
+margin: 4%;
+ margin-top: 200px;
+}
+img{
+  padding:2%
+}
+
+.gallery img{
+  padding: 5px;
+  height: 150px;
+}
+.carousel .card-2{
+  width: 35%;
+}
+  }
+
+@media screen and (max-width:600){
+ 
+
+
+}
+
+
