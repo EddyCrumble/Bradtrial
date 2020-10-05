@@ -334,6 +334,7 @@ width: 100%;
   .footer{
     position: relative;
     padding-bottom: 5px;
+    padding-top: 5px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -365,6 +366,7 @@ width: 100%;
       text-align: center;
       display: block;
       transition: all 0.3s ease;
+      z-index: 1;
     }
   
   
@@ -382,6 +384,7 @@ width: 100%;
       font-size: 20px;
       transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       background: #111;
+      
     }
     #click:checked ~ ul li a{
       margin-left: 20px;
@@ -392,10 +395,14 @@ width: 100%;
       color: #1b1b1b;
     }
 .sidebar {
-  width: 100%;
+  width: 30%;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
+  margin-top: 10px;
+margin-left: 425px;
+margin-bottom:10px;
+
 }
 .left-col{
   text-align: center;
@@ -415,7 +422,7 @@ width: 100%;
     .inner{
       font-size:120%;
     }
-    .conten h1{
+    .content h1{
       font-size:180%;
     }
 p{font-size:120%;
@@ -446,10 +453,105 @@ img{
 }
   }
 
-@media screen and (max-width:600){
- 
+@media screen and (max-width:600px){
 
+  nav .menu-btn i{
+    display: block;
+    
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 150px;
+    right:100%;
+    background:transparent;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 20%;
+    margin: 10px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: 60%;
+    display: block;
+    font-size: 15px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: #111;
+  
+    
+  }
+  #click:checked ~ ul li a{
+    margin-left: 5px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: #ffffff;
+    color: #1b1b1b;
+  }
+
+  .sidebar {
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+margin-top: 10px;
+margin-left: 65px;
+   
+  }
+
+  .left-col{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+margin-left: 30px;
+  }
+
+  .parallax1 {
+   display: none;
+  }
+  
+  .parallax2 {
+  display: none;
+  }
+  
+  
+  .gallery img {
+    padding: 5px;
+    height: 100px;
+  }
+
+  .carousel .card-1{
+    width: 100%;
+  }
+
+  .carousel .card-2{
+    width: 60%;
+  }
+
+  .form-control{
+    width:300px;
+    background:transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color-adjust: #ffffff;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
 
 }
-
-
