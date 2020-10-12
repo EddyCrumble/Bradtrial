@@ -104,7 +104,7 @@ img{
   height:100%;
   width: 100%;
   margin:auto;
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/Bell\ &\ Ross\ BR03\ Diver.jpg") no-repeat 50% 50%;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/Bell\ &\ Ross\ BR03\ Diver.jpg") no-repeat center;
   background-size: cover;
   display: table;
   top: 0;
@@ -241,6 +241,16 @@ cursor: pointer;
       text-align: center;
       margin: auto;   
     }  
+
+    .carousel .card-3{
+      width: 20%;
+      height: 1%;
+      justify-content: center;
+      text-align: center;
+      margin: auto;   
+    }  
+  
+
     .owl-dots{
       text-align: center;
       margin-top: 40px;
@@ -418,11 +428,27 @@ margin-bottom:10px;
   padding: 10px;
   height: 200px;
 }
+
+.carousel .card-3{
+  width: 25%;
+}
+
 }
   
 
 
   @media screen and (max-width:768px) {
+    .intro{
+      height:100%;
+      width: 100%;
+      margin:auto;
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/Bell\ &\ Ross\ BR03\ Diver.jpg") no-repeat center;
+      background-size: cover;
+      display: table;
+      top: 0;
+     
+    }
+
     .inner{
       font-size:120%;
     }
@@ -452,8 +478,16 @@ img{
   padding: 5px;
   height: 150px;
 }
+
+.carousel .card-1{
+  width: 95%;
+}
 .carousel .card-2{
-  width: 35%;
+  width: 50%;
+}
+
+.carousel .card-3{
+  width: 40%;
 }
   }
 
@@ -545,6 +579,10 @@ margin-left: 30px;
 
   .carousel .card-2{
     width: 60%;
+  }
+
+  .carousel .card-3{
+    width:65%;
   }
 
   .form-control{
@@ -647,9 +685,13 @@ margin-left: 30px;
     }
   
     .carousel .card-2{
-      width: 60%;
+      width: 100%;
     }
   
+    .carousel .card-3{
+      width: 100%;
+    }
+
     .form-control{
       width:300px;
       background:transparent;
