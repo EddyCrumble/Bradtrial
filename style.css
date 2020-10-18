@@ -12,16 +12,6 @@ html, body {
   box-sizing: border-box; 
 }
 
-.logo-image {
-width: 100px;
-height: 100px;
-float: left;
-position: absolute;
-margin: 0 auto;
-padding: 8px;
-height: auto;
-}
-
 nav{
   display: flex;
   height: 110px;
@@ -69,7 +59,7 @@ nav .menu-btn i{
   cursor: pointer;
   display: none;
   position: fixed;
-  top: 120px;
+  top: 45px;
   left: 50px;
 }
 input[type="checkbox"]{
@@ -155,7 +145,8 @@ padding: 10px;
 .sidebar{
 width: 350px;
 float:left;
-margin: 3%;
+margin-left: 6%;
+margin-top:11% ;
 
 
 
@@ -210,6 +201,7 @@ cursor: pointer;
     .carousel{
       width:100%;
       padding: 0;
+     
       
     }
     .carousel .card{
@@ -225,12 +217,14 @@ cursor: pointer;
   text-align: justify;
   font-weight: 300;
  
+ 
     }
     .carousel .card-1{
      
       width: 40%;
       height: 50%; 
       margin: auto; 
+    
       
       
     }
@@ -372,7 +366,7 @@ width: 100%;
     }
     nav ul{
       position: fixed;
-      top: 150px;
+      top: 100px;
       right:100%;
       background:transparent;
       height: 100vh;
@@ -380,7 +374,7 @@ width: 100%;
       text-align: center;
       display: block;
       transition: all 0.3s ease;
-      z-index: 1;
+      z-index: 5;
     }
   
   
@@ -409,14 +403,15 @@ width: 100%;
       color: #1b1b1b;
     }
 .sidebar {
-  width: 30%;
-  margin: 0 auto;
-  justify-content: center;
-  text-align: center;
-  margin-top: 10px;
-margin-left: 425px;
+width: 30%;
+height: auto;
+justify-content: center;
+text-align: center;
+margin-top: 10px;
+margin-left: 36%;
+margin-right: 40%;
 margin-bottom:10px;
-
+position: relative;
 }
 .left-col{
   text-align: center;
@@ -432,10 +427,7 @@ margin-bottom:10px;
 .carousel .card-3{
   width: 25%;
 }
-
 }
-  
-
 
   @media screen and (max-width:768px) {
     .intro{
@@ -446,7 +438,6 @@ margin-bottom:10px;
       background-size: cover;
       display: table;
       top: 0;
-     
     }
 
     .inner{
@@ -455,21 +446,26 @@ margin-bottom:10px;
     .content h1{
       font-size:180%;
     }
+
 p{font-size:120%;
 }
+
 h2{font-size:160%
 }
+
 .left-col{
   width:60%;
   margin: 0 0 3% 0;
   padding:0 2%;
 }
+
 .sidebar {
   width: 200px;
 float:left;
 margin: 4%;
- margin-top: 200px;
+ margin-top: 100px;
 }
+
 img{
   padding:2%
 }
@@ -502,7 +498,7 @@ img{
   }
   nav ul{
     position: fixed;
-    top: 150px;
+    top: 100px;
     right:100%;
     background:transparent;
     height: 100vh;
@@ -541,11 +537,13 @@ img{
 
   .sidebar {
     width: 60%;
+    height: auto;
     margin: 0 auto;
     justify-content: center;
     text-align: center;
 margin-top: 10px;
-margin-left: 65px;
+margin-left: 18%;
+margin-right:  50%;
    
   }
 
@@ -607,7 +605,7 @@ margin-left: 30px;
     }
     nav ul{
       position: fixed;
-      top: 150px;
+      top: 100px;
       right:100%;
       background:transparent;
       height: 100vh;
@@ -648,11 +646,13 @@ margin-left: 30px;
   
     .sidebar {
       width: 60%;
+      height: auto;
       margin: 0 auto;
       justify-content: center;
       text-align: center;
   margin-top: 10px;
-  margin-left: 60px;
+  margin-left: 21%;
+  margin-right: 50%;
      
     }
   
