@@ -1,19 +1,23 @@
 <?php
-if(!isset($_POST["send"])) {
-	$name = $_POST["name"];
-	$email = $_POST["email"];
-	$subject = $_POST["subject"];
-	$message = $_POST["message"];
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$message = $_POST['message'];
 
-	$toEmail = "bradjhomes@gmail.com";
-	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
-	if(mail($toEmail, $subject, $message, $mailHeaders)) {
-	    $message = "Your contact information is received successfully.";
-	    $type = "success";
-	}
-	else{
-		$message = "Something went wrong!";
-	}
-}
+$email_from = "";
+$email_subject - "";
+$email_body = "User Name: $name.\n".
+"User Email: $visitor_email.\n".
+"User Message: $message.\n";
+
+$to = "bradjhomes@gmail.com";
+
+$headers = "From: $email_from \r\n";
+
+$headers .= "Reply-To: $visitor_email \r\n";
+
+mail($to,$email_subject,$email_body,$headers);
+
+header("Location: index.html");
+
 
 ?>
