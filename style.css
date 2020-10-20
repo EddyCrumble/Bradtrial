@@ -94,7 +94,7 @@ img{
   height:100%;
   width: 100%;
   margin:auto;
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/Bell\ &\ Ross\ BR03\ Diver.jpg") no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img lowres/Bell & Ross BR03 Diver (1).jpg") no-repeat center;
   background-size: cover;
   display: table;
   top: 0;
@@ -367,6 +367,7 @@ cursor: pointer;
       background: #ffffff;
       color: #1b1b1b;
     }
+    
 .sidebar {
 width: 30%;
 height: auto;
@@ -440,8 +441,6 @@ img{
   height: 150px;
 }
 
-
-
 .carousel .card-1{
   width: 95%;
   padding: 10px;
@@ -462,11 +461,12 @@ img{
 
   nav .menu-btn i{
     display: block;
-    
   }
+
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
   }
+
   nav ul{
     position: fixed;
     top: 100px;
@@ -479,14 +479,15 @@ img{
     transition: all 0.3s ease;
   }
 
-
   #click:checked ~ ul{
     left: 0;
   }
+
   nav ul li{
     width: 25%;
     margin: 10px 0;
   }
+
   nav ul li a{
     width: 100%;
     margin-left: 60%;
@@ -494,9 +495,8 @@ img{
     font-size: 15px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     background: #111;
-  
-    
   }
+
   #click:checked ~ ul li a{
     margin-left: 5px;
   }
@@ -554,17 +554,6 @@ margin-left: 30px;
     width:65%;
   }
 
-  .form-control{
-    width:300px;
-    background:transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid gray;
-    color-adjust: #ffffff;
-    font-size: 18px;
-    margin-bottom: 16px;
-  }
-
   @media screen and (max-width:400px){
 
     nav .menu-btn i{
@@ -584,9 +573,7 @@ margin-left: 30px;
       text-align: center;
       display: block;
       transition: all 0.3s ease;
-     
     }
-  
   
     #click:checked ~ ul{
       left: 0;
@@ -602,8 +589,6 @@ margin-left: 30px;
       font-size: 12px;
       transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       background: #111;
-      
-    
       
     }
     #click:checked ~ ul li a{
@@ -662,17 +647,6 @@ margin-left: 30px;
   
     .carousel .card-3{
       width: 80%;
-    }
-
-    .form-control{
-      width:300px;
-      background:transparent;
-      border: none;
-      outline: none;
-      border-bottom: 1px solid gray;
-      color-adjust: #ffffff;
-      font-size: 18px;
-      margin-bottom: 16px;
     }
 
 }
