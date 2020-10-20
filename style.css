@@ -295,49 +295,14 @@ cursor: pointer;
   padding-top:17%
 }
 
-form{
-margin-top: 50px;
-display: inline-block;
-text-align: center;
-justify-content: center;
-position: relative;
-
-width: 100%;
-  }
-  
-  .form-control{
-    width:600px;
-    background:transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid gray;
-    color-adjust: #ffffff;
-    font-size: 18px;
-    margin-bottom: 16px;
-  }
-  
-  input{
-  height: 45px;  
-  }
-  
-  form.submit{
-    background: orange;
-    border-color: transparent;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top:20px;
-  }
-  
-  form.submit:hover{
-    background-color:white;
-    color: black;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-  }
+.contact h2{
+  font-family: 'Playfair', serif;
+  font-size: 180%;
+  font-weight: 500;
+  color: #2c2c2c;
+  text-align: center;
+  text-decoration: none;
+}
   
   .footer{
     position: relative;

@@ -1,23 +1,28 @@
-<?php
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
+<?php 
 
-$email_from = "";
-$email_subject - "";
-$email_body = "User Name: $name.\n".
-"User Email: $visitor_email.\n".
-"User Message: $message.\n";
+    if(isset($_POST['submit']))
+    {
+       $name = $_POST['name'];
+       $email = $_POST['email'];
+       $subject = $_POST['subject'];
+       $message = $_POST['message'];
 
-$to = "bradjhomes@gmail.com";
+       if(empty($name) || empty($email) || empty($subject) || empty($message))
+       {
+           header('location:index.html?error');
+       }
+       else
+       {
+           $to = "ecroome@hotmail.com";
 
-$headers = "From: $email_from \r\n";
-
-$headers .= "Reply-To: $visitor_email \r\n";
-
-mail($to,$email_subject,$email_body,$headers);
-
-header("Location: index.html");
-
-
+           if(mail($to,$Subject,$Msg,$Email))
+           {
+               header("location:index.html?success");
+           }
+       }
+    }
+    else
+    {
+        header("location:index.html");
+    }
 ?>
