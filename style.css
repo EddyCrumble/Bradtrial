@@ -440,15 +440,21 @@ img{
   height: 150px;
 }
 
+
+
 .carousel .card-1{
   width: 95%;
+  padding: 10px;
 }
+
 .carousel .card-2{
   width: 50%;
+  padding: 10px;
 }
 
 .carousel .card-3{
   width: 40%;
+  padding: 10px;
 }
   }
 
@@ -537,7 +543,7 @@ margin-left: 30px;
   }
 
   .carousel .card-1{
-    width: 100%;
+    width: 80%;
   }
 
   .carousel .card-2{
@@ -646,15 +652,16 @@ margin-left: 30px;
     }
   
     .carousel .card-1{
-      width: 100%;
+      width: 80%;
+     
     }
   
     .carousel .card-2{
-      width: 100%;
+      width: 80%;
     }
   
     .carousel .card-3{
-      width: 100%;
+      width: 80%;
     }
 
     .form-control{
