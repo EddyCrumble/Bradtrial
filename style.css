@@ -528,6 +528,15 @@ margin-right:  50%;
 margin-left: 30px;
   }
 
+p{
+  font-family: 'Raleway', serif;
+  color: #2c2c2c;
+  font-size: 100%;
+  line-height: 150%;
+  text-align: center;
+  font-weight: 300;
+}
+
   .parallax1 {
    display: none;
   }
@@ -551,7 +560,7 @@ margin-left: 30px;
   }
 
   .carousel .card-3{
-    width:65%;
+    width:75%;
   }
 
   @media screen and (max-width:400px){
@@ -621,6 +630,8 @@ margin-left: 30px;
       margin-top: 10px;
   margin-left: 30px;
     }
+
+    
   
     .parallax1 {
      display: none;
@@ -637,7 +648,7 @@ margin-left: 30px;
     }
   
     .carousel .card-1{
-      width: 80%;
+      width: 85%;
      
     }
   
